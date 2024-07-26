@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewData["Title"] = "About";
+}
+@model MaktabMvcTest.Models.User;
+
+<div class="text-center">
+    <h1 class="display-4">Hello @Model.FirstName @Model.LastName</h1>
+    <p>Your Id is @Model.Id</p>
+    <p>Your account created at @Model.CreatedAt</p>
+    <p>Your account is @(Model.IsDeleted ? "" : "not") deleted.</p>
+</div>

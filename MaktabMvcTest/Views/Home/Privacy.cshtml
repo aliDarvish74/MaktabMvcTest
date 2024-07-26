@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<form method="post" asp-controller="Home" asp-action="About">
+    <table>
+        <tr>
+            <td>First Name: </td>
+            <td><input type="text" id="txtFirstName" name="FirstName" /></td>
+        </tr>
+        <tr>
+            <td>Last Name: </td>
+            <td><input type="text" id="txtLastName" name="x" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Submit" /></td>
+        </tr>
+    </table>
+    <hr />
+    @ViewBag.Name
+</form>
